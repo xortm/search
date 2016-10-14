@@ -1,0 +1,127 @@
+.search .dop-footer {
+    margin-top: 0;
+}
+.search {
+    background-color: #fff;
+}
+.dop-search-block {
+    width: 1400px;
+    height: 140px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 45px;
+}
+
+@media screen and (min-width: 640px) {
+    .dop-search-block {
+        min-width: 480px;
+        width: 40%;
+    }
+}
+
+.dop-search-field {
+    position: relative;
+}
+
+.dop-search-block-input {
+    -webkit-appearance: none;
+    border: 1px solid #8c8b8b;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 40px 10px 10px;
+    width: 500px;
+    height: 50px;
+    font-size: 14px;
+    color: #1f1f1f;
+}
+
+.has-suggestions .dop-search-block-input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 25px;
+}
+.shou{
+    display: none;
+}
+.search-bar-clear {
+    background-image: url(../img/cancel.png);
+    background-size: 50%;
+    right: 62px;
+    width: 40px;
+}
+
+.dop-search-block-submit {
+    padding-left: 10px;
+    background-image: url(../img/search.png);
+    background-color: #f06000;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 115px;
+    font-size: 0;
+}
+
+.dop-search-block-submit:hover {
+    opacity: 1;
+}
+
+.is-focused .dop-search-block-input,
+.is-focused .dop-search-block-submit {
+    border-color: #ccc;
+}
+
+.dop-search-block-suggestions {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-sizing: border-box;
+    font-size: 12px;
+    list-style: none;
+    color: #1f1f1f;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -1px;
+    width: 380px;
+    box-shadow: 1px 1px 6px 0 rgba(0,0,0,7);
+}
+
+.dop-search-block-suggestions li {
+    cursor: default;
+    line-height: 45px;
+    letter-spacing: 0.03em;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #ffffff;
+    border-bottom: 1px solid #b9b9b9;
+}
+.dop-search-block-suggestions li span{
+    margin-left: 10px;
+}
+.dop-search-block-suggestions .highlighted {
+    background: #f5f5f5;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #1f1f1f;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #1f1f1f;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #1f1f1f;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #1f1f1f;
+}
